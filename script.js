@@ -2,7 +2,7 @@ function buttonFunction() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
 
-    ctx.fillStyle = "#ff8000";
+    ctx.fillStyle = "#ffffff";
     ctx.fillRect(0, 0, 150, 150);
 }
 
@@ -10,7 +10,7 @@ function button2Function() {
     var canvas = document.getElementById("myCanvas");
     var ctx = canvas.getContext("2d");
 
-    ctx.fillStyle = "#ffbf00";
+    ctx.fillStyle = "#00e64d";
 
     for (let index = 0; index <= 140; index = index +20) {
         ctx.fillRect(index,index, 10, 10)
@@ -29,7 +29,7 @@ function button3Function() {
 
     for (let index = 140; index >= 0; index = index -20) {
         for (let j = 0; j <=140; j = j +20) {
-        ctx.fillRect(index,j, 10, 10)
+            ctx.fillRect(index,j, 10, 10)
         }
     }
 }
