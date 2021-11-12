@@ -11,6 +11,6 @@ function buttonCiaone() {
         var canvas = document.getElementById("myCanvas1");
         var ctx = canvas.getContext("2d");
         ctx.fillStyle = "#ff0000";
-        ctx.fillRect(0, 0, 200, 200);
+        ctx.fillRect(0, 0, 500, 500);
     }
 }
