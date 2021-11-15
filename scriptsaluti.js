@@ -13,3 +13,9 @@ function resetta() {
     document.getElementById("testo").value = " "
     document.getElementById("console").innerHTML = " ";
 }
+function saluti() {
+    alert("Saluti!");
+}
+
+
+

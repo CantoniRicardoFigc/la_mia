@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
+    <head>
+
+        <script src="scriptsaluti.js"></script>
+
+        <title>
+            Saluti
+        </title>
+
+    </head>
 <body>
    
     <label>Inserire  num max  da generare...</label><br>
     <input type= "text"  id="testo">
     <button onclick="resetta()" value="cancella">cancella</button>
-   
+    <button onclick="saluti()" id="buttonsaluti">Saluta</button>
     <button onclick="genera()" id="bottone">Genera  casuale numero</button>
     <p id="console"></p>  
     
@@ -18,7 +27,7 @@
         <input type="text" name="indirizzo">
         <input type="submit" name='invia' value="Invia">
     </form>
-    
+
     <p>Clicca il bottone "Visualizza" per visualizzare i valori inseriti, prima dell'invio dei dati.</p>
     <button onclick="visualizza()">Visualizza</button>
     <p id="console"></p>
