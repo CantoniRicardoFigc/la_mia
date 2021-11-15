@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+   
+    <label>Inserire  num max  da generare...</label><br>
+    <input type= "text"  id="testo">
+    <button onclick="resetta()" value="cancella">cancella</button>
+   
+    <button onclick="genera()" id="bottone">Genera  casuale numero</button>
+    <p id="console"></p>  
+    
+    <form id="dati" action="#">
+        <label><b>Cognome</b></label><br/>
+        <input type="text" name="cognome"><br/>
+        <label><b>Nome</b></label><br/>
+        <input type="text" name="nome"><br/>
+        <label><b>Indirizzo</b></label><br/>
+        <input type="text" name="indirizzo">
+        <input type="submit" name='invia' value="Invia">
+    </form>
+    
+    <p>Clicca il bottone "Visualizza" per visualizzare i valori inseriti, prima dell'invio dei dati.</p>
+    <button onclick="visualizza()">Visualizza</button>
+    <p id="console"></p>
+
+    <script>
+    function visualizza() {
+        var v = document.forms["dati"];
+        var text = "";
+        for (var i = 0; i < v.length -1; i++) {
+            text += v.elements[i].value + "<br>";
+        }
+        document.getElementById("console").innerHTML = text;
+    }
+    </script>
+
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML canvas tag.</canvas>
+    
+    <script>
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.font = "30px Arial";
+    ctx.fillText("Hello World",10,50);
+    </script>
+    
+ </body>
+ </html>
