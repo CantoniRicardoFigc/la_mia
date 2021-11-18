@@ -92,5 +92,38 @@ function buttonQuadrati() {
         ctx.fillStyle = "lightgreen";
         ctx.fillRect(index, 170, 40, 40)
     }
-    
+     
+}
+
+function buttonSpirale() {
+    var canvas = document.getElementById("myCanvas2");
+    var ctx = canvas.getContext("2d");
+
+    //spirale
+    for (let i = 0; i <= 150; i = i +10) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(i,0, 10, 10)
+    }
+    for (let i = 0; i <= 150; i = i +10) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(150,i, 10, 10)
+    }
+    for (let i = 30; i <= 150; i = i +10) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(i,150, 10, 10)
+    }
+    for (let i = 150; i >= 50; i = i -10) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(30,i, 10, 10)
+    }
+    for (let i = 30; i <= 100; i = i +10) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(i,50, 10, 10)
+    }
+    for (let i = 50; i <= 100; i = i +10) {
+        ctx.fillStyle = "black";
+        ctx.fillRect(100,i, 10, 10)
+    }
+
+
 }
