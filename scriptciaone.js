@@ -125,5 +125,4 @@ function buttonSpirale() {
         ctx.fillRect(100,i, 10, 10)
     }
 
-
 }
